@@ -10,10 +10,10 @@ levels[2] = ["001010B","0100010","1001000","1000000","A001101"]
 levels[3] = ["111100B","0001000","0001000","0001000","A001111"]
 levels[4] = ["1001001","0000001","0101010","001K000","A00B101"]
 levels[5] = ["110001A","0000010","1000000","001K000","0001100","1000000","B000001"]
-levels[6] = ["00001B0","1000100","00010A0","K010001","0100100","0010000","0000010"]
-levels[7] = ["A000100","0010000","0001000","1000000","B010000","0000011","010001K"]
-levels[8] = ["100000B","0000010","0010000","0000100","0100001","0K01000","A001001"]
-levels[9] = ["010000100","100100001","A010K100B","000010000","000000010"]
+levels[6] = ["A000100","0010000","0001000","1000000","B010000","0000011","010001K"]
+levels[7] = ["100000B","0000010","0010000","0000100","0100001","0K01000","A001001"]
+levels[8] = ["010000100","100100001","A010K100B","000010000","000000010"]
+levels[9] = ["00001B0","1000100","00010A0","K010001","0100100","0010000","0000010"]
 levels[10] = ["001001000","100000001","000010010","0100001K0","A001B0000"]
 levels[11] = ["K00001000","101000000","000000100","000000001","B00010000","100000010","01A001000","000100000","001000001"]
     
@@ -96,7 +96,7 @@ obstacles = [""] # The x, y location of every obstacles for a given level
 start = [""] # The starting location of each level
 finish = [""] # The location of the doors for every level
 keys = [0]*50 # (If it exists) the location of the keys in the level
-moves = ["", 9, 6, 4, 5, 9, 6, 8, 10, 9,8,0,0,0,0,0,0] # The amount of moves it takes to earn 3 stars for a given level
+moves = ["", 9, 6, 4, 5, 9, 8, 10, 9, 6, 8, 9,0,0,0,0,0] # The amount of moves it takes to earn 3 stars for a given level
 
 # Declaring necessary variables
 currentLvl = 1 # The current level
@@ -338,3 +338,4 @@ while True:
         winsound.PlaySound("end.wav", winsound.SND_ALIAS)
     
     win.update()
+
