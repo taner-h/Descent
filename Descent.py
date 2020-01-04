@@ -15,6 +15,7 @@ levels[7] = ["A000100","0010000","0001000","1000000","B010000","0000011","010001
 levels[8] = ["100000B","0000010","0010000","0000100","0100001","0K01000","A001001"]
 levels[9] = ["010000100","100100001","A010K100B","000010000","000000010"]
 levels[10] = ["001001000","100000001","000010010","0100001K0","A001B0000"]
+levels[11] = ["K00001000","101000000","000000100","000000001","B00010000","100000010","01A001000","000100000","001000001"]
     
 # Setting up the screen
 win = turtle.Screen()
@@ -145,7 +146,7 @@ def drawLevel(level):
         obstacles.append(finish[currentLvl])
     
     levelpen.setposition(0,size*((ylen + 1)/2))
-    levelpen.write("LEVEL " + str(currentLvl),align="center", font=("Courier New", 36, "normal"))
+    levelpen.write("LEVEL " + str(-(currentLvl-1)),align="center", font=("Courier New", 36, "normal"))
     
     pencil.setposition(-size*(xlen /2),-size*((ylen + 2)/2))
     pencil.write("MOVE: " + str(move), align="left", font=("Courier New", 24, "bold"))
@@ -325,12 +326,12 @@ while True:
         obstacles = [""]
         hasKey = 0
         move = 0
-        if currentLvl == 11:
+        if currentLvl == 12:
             winsound.PlaySound("theend.wav", winsound.SND_ALIAS)
             pencil.goto(0,50)
             pencil.write("THE END", align="center", font=("Courier New", 48, "bold"))
             pencil.goto(0,-50)
-            pencil.write("Your Score: " + str(star), align="center", font=("Courier New", 24, "bold"))
+            pencil.write("Your Score: " + str(star) +"/33", align="center", font=("Courier New", 24, "bold"))
             break
         drawLevel(levels[currentLvl])
         player.setposition(start[currentLvl])
