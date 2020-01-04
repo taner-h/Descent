@@ -20,7 +20,7 @@ levels[10] = ["001001000","100000001","000010010","0100001K0","A001B0000"]
 win = turtle.Screen()
 win.bgcolor("black")
 win.setup(1000,1000)
-win.title("Untitled - The Game")
+win.title("Descent")
 
 # Adding custom shapes
 win.addshape("key.gif")
