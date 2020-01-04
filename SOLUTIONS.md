@@ -8,22 +8,24 @@ U: Up
 
 D: Down
 
-Level 1: R U R U R U R U R
+Level 0: R U R U R U R U R
 
-Level 2: R U R D R U
+Level -1: D L U
 
-Level 3: U L U R
+Level -2: U L U R
 
-Level 4: U R U L D
+Level -3: U R U L D
 
-Level 5: D L U R D L R D L
+Level -4: D L U R D L R D L
 
-Level 6: D R D L D L
+Level -5: L D L U R U R U
 
-Level 7: L D L U R U R U
+Level -6: R U R U L U D R U R
 
-Level 8: R U R U L U D R U R
+Level -7: R D R U L D U L U
 
-Level 9: R D R U L D U L U
+Level -8: D R D L D L
 
-Level 10: R U R U D L U L
+Level -9: R U R U D L U L
+
+Level -10: U L U R D L U L D
