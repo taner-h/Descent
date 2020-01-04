@@ -7,7 +7,7 @@
 
   In the event of not encountering an obstacle in the row/column while moving, the player appears at the other side of the same row/column, continuing its movement until an obstacle is met.
 
-  In some levels, the player can not go through the door unless the key is acquiered beforehand. Before the player acquieres the key, the door acts as another obstacle.
+  In some levels, the player can not go through the door unless the key is acquired beforehand. Before the player acquires the key, the door acts as another obstacle.
   
   The player is awarded at the end of each level with stars according to its move count. If the move count is equal to or less than the predetermined number, the player earns 3 stars. If it's less then two times of that number, the award is 2 stars. The player is awarded at least 1 star for each completed level.
   
